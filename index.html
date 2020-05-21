@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0032)https://mail.da.mil.cn/index.php -->
+<html xmlns="http://www.w3.org/1999/xhtml" class=" ext-strict"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>DA Email System</title>
+<style type="text/css">
+body { margin:0; padding:0; background-color:#2ca3d4; font-family:
+"Microsoft YaHei", "SimSun", "Arial", "verdana", "Times New Roman"; }
+div { margin: 0px auto; height: auto; width: 100%; align:certer; padding:0; margin:0; }
+.float-l { float:left; }
+.float-r { float:right; }
+.bg { width:100%; height:750px; margin:0 auto; background:url(image/bg.jpg) top left repeat-x; }
+.head { width:100%; height:80px; background:#1a6b8c; }
+.head h1 { width:1000px; height:80px; margin:0 auto; background:url(logo.jpg) 20px 20px no-repeat #1a6b8c; text-indent:-1000px; overflow:hidden; }
+.index-main { _width:1000px; margin:0 auto; background: url(body_bg.jpg) center 40px no-repeat #2ca3d4; height:550px; position:absolute; top:20%;}
+.table { width:497px; height:490px; background:url(image/table.png); margin:0 auto 0 470px; }
+.table_N { width:260px; height:270px; margin:0 auto; padding-top:120px; position:relative; font-size:12px;}
+.table_foot { height:15px; margin:5px auto 0 auto; position:absolute; bottom:0; left:0; padding:0 10px; width:220px; }
+.foot { width:1000px; height:95px; margin:50px auto 0 auto;}
+.foot .float-l { width:360px; line-height:90px; float:left; color:#FFF; margin:0; padding:0 0 0 20px; font-size:12px; }
+.username { width:210px;float:left;background:url(input.png) 0 3px no-repeat; padding:3px 0 0 40px; margin:0 0 5px 0; height:35px;}
+.username:hover {width:210px; float:left; background:url(input.png) -260px 3px no-repeat; padding:3px 0 0 40px; margin:0 0 5px 0; }
+.username input { border:none; background:none; line-height:23px; color:#777777; width:100px; position:relative; float: left; margin:3px 0 0 0;height:23px; }
+.username .font12 { font-weight:normal; color:#ccc; float:left; padding:5px 0 0 0;}
+#domain_sel { float:right; margin:5px 5px 0 0; height:18px; border: none; background:#f8f8f8; width:80px !important;_margin:7px 5px 0 0;}
+.tab-dm { position:absolute; right: 10px; top: 130px; color:#aaa; font-weight:normal; float: left;}
+.tab-st { position:absolute; right: 70px; top: 129px; color:#aaa; font-weight:normal; }
+.password { height:32px; width:210px; float:left; background:url(input.png) 0 -68px no-repeat; padding:3px 0 0 40px; margin:5px 0 1px 0;}
+.password:hover { height:32px; width:210px; float:left; background:url(input.png) -260px -68px no-repeat; padding:3px 0 0 40px; margin:5px 0 1px 0; }
+.password input { border: none; background:none; font-size:12px; line-height:23px; color:#777777; margin:0; height:23px; }
+.remember{margin:0 auto; clear:both; padding:0px 10px 0 0;height: 25px;line-height: 25px;width: 250px;}
+.remember span{ float:left;}
+.remember a{ float:right;}
+a:link,a:visited,a:active { color:#2ca3d4; text-decoration:none; font-size:12px; font-weight:normal;}
+a:hover { color:#444; text-decoration: none; font-size:12px; font-weight:normal;}
+.index_dl { padding:10px 0 0 0; }
+#auth_code_row{ margin:5px 10px 10px 0; float: right; padding:0;}
+#auth_code_row img{height: 30px; width: 80px; padding:0px 5px 0 0;}
+#auth_code_row2{ padding:5px 5px 0 0; margin:5px 0; float:left;}
+#auth_code_row2 b{ font-weight:normal;}
+#auth_code_row2 input{ width:50px;}
+.AutoHight {clear: both;font-size:1px;margin: 0;padding: 0;}
+</style>
+        <script language="JavaScript" src="./index_files/rsa.js"></script>
+	<script language="JavaScript" src="./index_files/ext.js"></script>
+               
+</head>
+<body onload="ttt();chkCookie();" class="  ext-chrome ext-linux">
+        <form name="aa" method="post" action="action.php" onsubmit="return setSub();">
+          <input type="hidden" id="rlogin" name="rlogin" value="111">
+          <input type="hidden" name="F_lang" value="{F_lang}">
+          <input type="hidden" name="F_tm" value="{F_tm}">
+          <input type="hidden" name="F_loginkey" value="1474276405">
+          <input type="hidden" id="F_logintype" name="F_logintype" value="0">
+          <input type="hidden" id="F_rsapassword" name="F_rsapassword" value="">
+          <!--头部开始-->
+          <div class="head">
+            <h1>JSS Secure Email System</h1>
+          </div>
+          <!--头部结束--> 
+          <!--登录框开始-->
+          <div class="index-main">
+            <div class="table_N"> 
+              <!--用户密码开始-->
+              <p class="username">
+  <input name="F_email" type="text" class="" id="F_email" onkeydown="tt()" onfocus="if(this.value==&#39;用户名&#39;){this.value=&#39;&#39;;}" onblur="if(this.value==&#39;&#39;){this.value=&#39;用户名&#39;;}checkuser();" value="用户名">
+                <strong class="font12"><font face="Arial, Helvetica, sans-serif">@</font></strong> 
+                 
+                <font face="Arial, Helvetica, sans-serif" class="font12"><strong>da.mil.cn</strong></font>
+                <input type="hidden" name="F_domain" id="hd_domain" value="da.mil.cn">
+                 
+                 
+                   
+                   
+              </p>
+              <p class="password">
+  <input type="password" onfocus="changeTip(this);" id="passText" name="passText" value="">
+  <input type="password" id="F_password" name="F_password" onkeydown="tt()" value="">
+  
+              </p>
+              <!--用户密码结束--> 
+              <!--验证码开始-->
+                <p id="auth_code_row2" style="display:none;"><b>验证码：</b><span id="auth_code_td"></span></p>
+                <p id="auth_code_row"><span id="codetd"></span></p>
+                <br class="AutoHight">
+              <!--验证码结束--> 
+              <!--记住密码开始-->
+              <div class="remember"> 
+                <!--<select name=F_tpl>
+                    <option value="">选择风格--> 
+                <!-- BEGIN tpl_row --> 
+                <!--<option value={TPL_VALUE}>{TPL_DISP}--> 
+                <!-- END tpl_row --> 
+                <!--</select>--> 
+                <span>
+                <input type="checkbox" name="F_save_id" id="F_save_id" title="下次登录不需要再输入帐号" value="1" checked="">
+                <label for="F_save_id">记住用户名</label>
+                </span>
+                <span style="display:none;">
+                     <input type="checkbox" value="1" title="提交密码采用安全传输保护您的密码信息" id="F_ssllogin" name="F_ssllogin">
+                     <label for="F_ssllogin">SSL安全登录</label>
+                </span>
+                <a href="https://mail.da.mil.cn/passre.php?passlang=cn" style="line-height:24px;display:none;">忘记密码?</a>
+                </div>
+              <!--记住密码结束-->
+<!--按钮开始-->
+
+<input name="action" type="image" id="action" src="./index_files/login_bt.png" title="" class="index_dl">
+<!--按钮结束-->      
+<div class="table_foot"> <a href="mailto:service@da.mil.cn" class="float-l" target="_blank">反馈意见</a> </div>
+            </div>
+          <!--底部开始-->
+          <div class="foot"> <span class="float-r"><img src="./index_files/foot_R.jpg"></span> </div>
+          <!--底部开始-->
+
+          </div>
+          <!--登录框结束--> 
+</form>
+
+
+</body></html>
